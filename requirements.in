@@ -1,0 +1,42 @@
+jupyterlab
+# lab 核心插件
+jupyterlab-git
+ipywidgets
+ipympl
+nbdime
+jupyter-wysiwyg
+jupyter-archive
+# python-lsp-server （@krassowski/jupyterlab-lsp） 貌似和 jupyterlab-lsp 一样。但是禁用和卸载不方便
+jupyterlab-lsp
+digautoprofiler
+jupyterlab-recents
+jupyterlab-cell-flash
+jupyterspot
+# lab 插件
+jupyter_scheduler
+jupyterlab_pygments
+jupyterlab_templates
+ipyuploads
+ipycytoscape
+# 实用工具包
+rich
+dearpygui
+scalene
+pyinspect
+# 业务包
+## 数据分析与可视化常用包
+numpy
+sympy
+scipy
+matplotlib
+seaborn
+pandas
+pandasgui
+Pillow
+hiplot
+## 网络工具常用包
+requests
+beautifulsoup4
+fastapi
+aiohttp
+Scrapy
