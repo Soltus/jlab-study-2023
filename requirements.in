@@ -1,4 +1,14 @@
+jupyterlab-language-pack-zh-CN
 ipympl
+nbdime
+jupyter-wysiwyg
+jupyter-archive
+jupyterlab-lsp
+jedi-language-server
+digautoprofiler
+jupyterlab-cell-flash
+jupyterlab_pygments
+ipycytoscape
 numpy
 sympy
 scipy
