@@ -246,8 +246,6 @@ jupyterlab==3.6.1
     # via jupyter-wysiwyg
 jupyterlab-cell-flash==0.3.5
     # via -r requirements.in
-jupyterlab-language-pack-zh-cn==3.6.post0
-    # via -r requirements.in
 jupyterlab-pygments==0.2.2
     # via
     #   -r requirements.in
