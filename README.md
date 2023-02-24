@@ -14,7 +14,7 @@
 
 1. `conda info -e` 命令应对输出而不是报错
 
-在 README.md 文件所在路径打开终端，运行以下命令：
+在 README.md 文件所在路径打开终端，运行以下命令：(应当使用 PowerShell 而不是 CMD 以避免意外发生)
 
 ```powershell
 conda create -n lab python=3.10
@@ -26,14 +26,14 @@ pip install pip-tools -i https://mirrors.tencent.com/pypi/simple
 ```
 
 ```powershell
-pip-sync win.requirements.txt --pip-args "--quiet"
+pip-sync win.requirements.txt --pip-args "--quiet --retries 10 --timeout 30"
 ```
 
 ```powershell
 jupyter lab --port='6969' --ip='*' --no-browser --allow-root --notebook-dir='D:\\TEMP\\jlab\\notebook'
 ```
 
---notebook-dir 传参因人而异，不出意外的话复苏成功。
+--notebook-dir 传参因人而异，不出意外的话复苏成功。在终端 CTRL + 单击链接或者手动打开浏览器访问 [http://127.0.0.1:6969/lab](http://127.0.0.1:6969/lab) ，时间交给你了
 
 # 初始化工作
 
