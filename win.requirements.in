@@ -21,6 +21,8 @@ jupyterlab_pygments
 jupyterlab_templates
 ipyuploads
 ipycytoscape
+jupyterlab-topbar
+jupyterlab-topbar-text
 # 实用工具包
 rich
 dearpygui

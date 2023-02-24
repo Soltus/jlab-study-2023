@@ -183,8 +183,6 @@ jsonschema[format-nongpl]==4.17.3
     #   jupyter-events
     #   jupyterlab-server
     #   nbformat
-jupyter-archive==3.3.4
-    # via -r requirements.in
 jupyter-client==8.0.3
     # via
     #   ipykernel
@@ -209,7 +207,6 @@ jupyter-events==0.6.3
     #   jupyter-server-fileid
 jupyter-server==2.3.0
     # via
-    #   jupyter-archive
     #   jupyter-server-fileid
     #   jupyterlab
     #   jupyterlab-server
@@ -221,14 +218,12 @@ jupyter-server-terminals==0.4.4
     # via jupyter-server
 jupyter-server-ydoc==0.6.1
     # via jupyterlab
-jupyter-wysiwyg==23.2.0
-    # via -r requirements.in
 jupyter-ydoc==0.2.2
     # via
     #   jupyter-server-ydoc
     #   jupyterlab
 jupyterlab==3.6.1
-    # via jupyter-wysiwyg
+    # via jupyterlab-topbar
 jupyterlab-cell-flash==0.3.5
     # via -r requirements.in
 jupyterlab-language-pack-zh-cn==3.6.post0
@@ -237,6 +232,12 @@ jupyterlab-pygments==0.2.2
     # via nbconvert
 jupyterlab-server==2.19.0
     # via jupyterlab
+jupyterlab-topbar==0.6.1
+    # via
+    #   -r requirements.in
+    #   jupyterlab-topbar-text
+jupyterlab-topbar-text==0.6.2
+    # via -r requirements.in
 jupyterlab-widgets==3.0.5
     # via ipywidgets
 kiwisolver==1.4.4

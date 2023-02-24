@@ -1,12 +1,14 @@
 jupyterlab-language-pack-zh-CN
 ipympl
 # nbdime # trouble maker
-jupyter-wysiwyg
-jupyter-archive
+#jupyter-wysiwyg
+#jupyter-archive
 digautoprofiler
 jupyterlab-cell-flash
 #jupyterlab_pygments
 #ipycytoscape
+jupyterlab-topbar
+jupyterlab-topbar-text
 numpy
 sympy
 scipy
