@@ -1,7 +1,8 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main)
 
 项目托管在 [Github](https://github.com/Soltus/jlab-study-2023)
-交互体验在 [Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main?urlpath=nteract)
+
+交互体验在 [Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main)（额外提供界面简洁的 [React Interface in Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main?urlpath=nteract) ，你觉得 Jupyter Lab 的界面过于复杂可以一试，代价是许多功能将不可用）
 
 # 复苏
 
