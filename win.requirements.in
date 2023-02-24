@@ -14,6 +14,7 @@ jedi-language-server
 digautoprofiler
 jupyterlab-recents
 jupyterlab-cell-flash
+jupyterlab_execute_time
 jupyterspot
 # lab ²å¼þ
 jupyter_scheduler
