@@ -4,6 +4,7 @@ jupyterlab
 jupyterlab-language-pack-zh-CN
 jupyterlab-git
 ipywidgets==7.6.6
+### REF: https://github.com/g2nb/nbtools/issues/5
 nbtools
 ipympl
 nbdime

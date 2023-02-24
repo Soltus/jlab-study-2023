@@ -124,6 +124,8 @@ decorator==5.1.1
     # via ipython
 defusedxml==0.7.1
     # via nbconvert
+deprecation==2.1.0
+    # via jupyter-packaging
 digautoprofiler==0.2.8
     # via -r win.requirements.in
 docstring-to-markdown==0.11
@@ -202,16 +204,20 @@ ipython==8.10.0
 ipython-genutils==0.2.0
     # via
     #   ipympl
+    #   ipywidgets
     #   nbclassic
     #   notebook
 ipyuploads==0.1.0
-    # via -r win.requirements.in
-ipywidgets==8.0.4
+    # via
+    #   -r win.requirements.in
+    #   nbtools
+ipywidgets==7.6.6
     # via
     #   -r win.requirements.in
     #   ipycytoscape
     #   ipympl
     #   ipyuploads
+    #   nbtools
 isoduration==20.11.0
     # via jsonschema
 itemadapter==0.7.0
@@ -280,6 +286,8 @@ jupyter-events==0.6.3
     #   jupyter-server-fileid
 jupyter-lsp==1.5.1
     # via jupyterlab-lsp
+jupyter-packaging==0.12.3
+    # via nbtools
 jupyter-scheduler==1.2.0
     # via -r win.requirements.in
 jupyter-server==2.3.0
@@ -316,6 +324,7 @@ jupyterlab==3.6.1
     #   jupyter-wysiwyg
     #   jupyterlab-lsp
     #   jupyterlab-templates
+    #   nbtools
 jupyterlab-cell-flash==0.3.5
     # via -r win.requirements.in
 jupyterlab-execute-time==2.3.1
@@ -336,7 +345,7 @@ jupyterlab-server==2.19.0
     # via jupyterlab
 jupyterlab-templates==0.3.2
     # via -r win.requirements.in
-jupyterlab-widgets==3.0.5
+jupyterlab-widgets==1.1.2
     # via ipywidgets
 jupyterspot==0.4.0
     # via -r win.requirements.in
@@ -395,6 +404,7 @@ nbdime==3.1.1
     #   jupyterlab-git
 nbformat==5.7.3
     # via
+    #   ipywidgets
     #   jupyter-server
     #   jupyterlab-git
     #   nbclassic
@@ -402,13 +412,17 @@ nbformat==5.7.3
     #   nbconvert
     #   nbdime
     #   notebook
+nbtools==23.1.0
+    # via -r win.requirements.in
 nest-asyncio==1.5.6
     # via
     #   ipykernel
     #   nbclassic
     #   notebook
 notebook==6.5.2
-    # via jupyterlab
+    # via
+    #   jupyterlab
+    #   widgetsnbextension
 notebook-shim==0.2.2
     # via nbclassic
 numpy==1.24.2
@@ -427,7 +441,9 @@ numpy==1.24.2
     #   wordcloud
 packaging==23.0
     # via
+    #   deprecation
     #   ipykernel
+    #   jupyter-packaging
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-git
@@ -655,6 +671,8 @@ tldextract==3.4.0
     # via scrapy
 tomli==2.0.1
     # via jupyterlab
+tomlkit==0.11.6
+    # via jupyter-packaging
 toolz==0.12.0
     # via altair
 tornado==6.2
@@ -721,8 +739,10 @@ websocket-client==1.5.1
 werkzeug==2.2.3
     # via flask
 wheel==0.38.4
-    # via scalene
-widgetsnbextension==4.0.5
+    # via
+    #   jupyter-packaging
+    #   scalene
+widgetsnbextension==3.5.2
     # via ipywidgets
 wordcloud==1.8.2.2
     # via pandasgui
