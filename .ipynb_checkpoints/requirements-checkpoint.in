@@ -1,9 +1,9 @@
-# jupyterlab-language-pack-zh-CN
+jupyterlab-language-pack-zh-CN
 ipympl
 nbdime
-jupyter-wysiwyg
-jupyter-archive
-digautoprofiler
+#jupyter-wysiwyg
+#jupyter-archive
+#digautoprofiler
 jupyterlab-cell-flash
 jupyterlab_pygments
 ipycytoscape
