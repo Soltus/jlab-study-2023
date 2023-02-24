@@ -1,5 +1,7 @@
 jupyterlab-language-pack-zh-CN
 ipympl
+ipywidgets==7.6.6
+nbtools
 # nbdime
 # jupyter-wysiwyg
 # jupyter-archive
@@ -8,8 +10,6 @@ jupyterlab-cell-flash
 # jupyterlab_execute_time
 # jupyterlab_pygments
 # ipycytoscape
-# jupyterlab-topbar
-# jupyterlab-topbar-text
 numpy
 sympy
 scipy

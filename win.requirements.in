@@ -3,7 +3,8 @@ jupyterlab
 # lab 核心插件
 jupyterlab-language-pack-zh-CN
 jupyterlab-git
-ipywidgets
+ipywidgets==7.6.6
+nbtools
 ipympl
 nbdime
 jupyter-wysiwyg
@@ -22,8 +23,6 @@ jupyterlab_pygments
 jupyterlab_templates
 ipyuploads
 ipycytoscape
-jupyterlab-topbar
-jupyterlab-topbar-text
 # 实用工具包
 rich
 dearpygui
