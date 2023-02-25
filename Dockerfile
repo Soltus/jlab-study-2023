@@ -3,6 +3,8 @@ COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache pip-tools && \
     pip-sync /tmp/requirements.txt --pip-args "--quiet --retries 10 --timeout 30"
+EXPOSE 6969
+CMD ["jupyter lab", "--port='6969'", "--ip='*'", "--no-browser", "--allow-root"]
 # FROM jupyter/datascience-notebook:cde8b4389ade
 # FROM jupyter/base-notebook:latest
 # COPY environment.yml /tmp/environment.yml
