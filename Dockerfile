@@ -1,5 +1,8 @@
 # FROM python:3.10-slim
 FROM jupyter/datascience-notebook:cde8b4389ade
+COPY environment.yml /tmp/environment.yml
+RUN mamba env update -n notebook --file /tmp/environment.yml \
+  && mamba clean -yaf
 # install the notebook package
 # RUN pip install --no-cache --upgrade pip && \
 #     pip install --no-cache notebook jupyterlab jupyterhub
