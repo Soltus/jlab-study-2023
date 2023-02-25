@@ -4,10 +4,16 @@
 #
 #    pip-compile --resolver=backtracking requirements.in
 #
+aiofiles==22.1.0
+    # via ypy-websocket
 aiohttp==3.8.4
     # via -r requirements.in
 aiosignal==1.3.1
     # via aiohttp
+aiosqlite==0.18.0
+    # via ypy-websocket
+alembic==1.9.4
+    # via jupyterhub
 altair==4.2.2
     # via digautoprofiler
 anyio==3.6.2
@@ -25,6 +31,8 @@ arrow==1.2.3
     # via isoduration
 asttokens==2.2.1
     # via stack-data
+async-generator==1.10
+    # via jupyterhub
 async-timeout==4.0.2
     # via aiohttp
 attrs==22.2.0
@@ -36,6 +44,8 @@ attrs==22.2.0
     #   twisted
 automat==22.10.0
     # via twisted
+babel==2.11.0
+    # via jupyterlab-server
 backcall==0.2.0
     # via ipython
 beautifulsoup4==4.11.2
@@ -49,6 +59,8 @@ brotli==1.0.9
     # via flask-compress
 certifi==2022.12.7
     # via requests
+certipy==0.1.3
+    # via jupyterhub
 cffi==1.15.1
     # via
     #   argon2-cffi-bindings
@@ -90,7 +102,7 @@ executing==1.2.0
     # via stack-data
 fastapi==0.92.0
     # via -r requirements.in
-fastjsonschema==2.16.2
+fastjsonschema==2.16.3
     # via nbformat
 filelock==3.9.0
     # via tldextract
@@ -108,6 +120,8 @@ frozenlist==1.3.3
     # via
     #   aiohttp
     #   aiosignal
+greenlet==2.0.2
+    # via sqlalchemy
 hiplot==0.1.33
     # via -r requirements.in
 hyperlink==21.0.0
@@ -132,6 +146,7 @@ ipython==8.10.0
     #   hiplot
     #   ipykernel
     #   ipywidgets
+    #   jupyterlab
 ipython-genutils==0.2.0
     # via
     #   ipywidgets
@@ -156,17 +171,24 @@ jinja2==3.1.2
     #   altair
     #   flask
     #   jupyter-server
+    #   jupyterhub
+    #   jupyterlab
+    #   jupyterlab-server
     #   nbclassic
     #   nbconvert
     #   notebook
 jmespath==1.0.1
     # via itemloaders
+json5==0.9.11
+    # via jupyterlab-server
 jsonpointer==2.3
     # via jsonschema
 jsonschema[format-nongpl]==4.17.3
     # via
     #   altair
     #   jupyter-events
+    #   jupyter-telemetry
+    #   jupyterlab-server
     #   nbformat
 jupyter-client==8.0.3
     # via
@@ -180,25 +202,47 @@ jupyter-core==5.2.0
     #   ipykernel
     #   jupyter-client
     #   jupyter-server
+    #   jupyterlab
     #   nbclassic
     #   nbclient
     #   nbconvert
     #   nbformat
     #   notebook
 jupyter-events==0.6.3
-    # via jupyter-server
+    # via
+    #   jupyter-server
+    #   jupyter-server-fileid
 jupyter-server==2.3.0
     # via
+    #   jupyter-server-fileid
+    #   jupyterlab
+    #   jupyterlab-server
     #   nbclassic
     #   notebook-shim
+jupyter-server-fileid==0.8.0
+    # via jupyter-server-ydoc
 jupyter-server-terminals==0.4.4
     # via jupyter-server
+jupyter-server-ydoc==0.6.1
+    # via jupyterlab
+jupyter-telemetry==0.1.0
+    # via jupyterhub
+jupyter-ydoc==0.2.2
+    # via
+    #   jupyter-server-ydoc
+    #   jupyterlab
+jupyterhub==3.1.1
+    # via -r requirements.in
+jupyterlab==3.6.1
+    # via -r requirements.in
 jupyterlab-cell-flash==0.3.5
     # via -r requirements.in
 jupyterlab-language-pack-zh-cn==3.6.post0
     # via -r requirements.in
 jupyterlab-pygments==0.2.2
     # via nbconvert
+jupyterlab-server==2.19.0
+    # via jupyterlab
 jupyterlab-widgets==1.1.2
     # via ipywidgets
 kiwisolver==1.4.4
@@ -207,9 +251,12 @@ lxml==4.9.2
     # via
     #   parsel
     #   scrapy
+mako==1.2.4
+    # via alembic
 markupsafe==2.1.2
     # via
     #   jinja2
+    #   mako
     #   nbconvert
     #   werkzeug
 matplotlib==3.7.0
@@ -229,7 +276,9 @@ multidict==6.0.4
     #   aiohttp
     #   yarl
 nbclassic==0.5.2
-    # via notebook
+    # via
+    #   jupyterlab
+    #   notebook
 nbclient==0.7.2
     # via nbconvert
 nbconvert==7.2.9
@@ -251,7 +300,10 @@ nest-asyncio==1.5.6
     #   nbclassic
     #   notebook
 notebook==6.5.2
-    # via widgetsnbextension
+    # via
+    #   -r requirements.in
+    #   jupyterlab
+    #   widgetsnbextension
 notebook-shim==0.2.2
     # via nbclassic
 numpy==1.24.2
@@ -263,14 +315,21 @@ numpy==1.24.2
     #   pandas
     #   scipy
     #   seaborn
+oauthlib==3.2.2
+    # via jupyterhub
 packaging==23.0
     # via
     #   ipykernel
     #   jupyter-server
+    #   jupyterhub
+    #   jupyterlab
+    #   jupyterlab-server
     #   matplotlib
     #   nbconvert
     #   parsel
     #   scrapy
+pamela==1.0.0
+    # via jupyterhub
 pandas==1.5.3
     # via
     #   -r requirements.in
@@ -298,6 +357,7 @@ platformdirs==3.0.0
 prometheus-client==0.16.0
     # via
     #   jupyter-server
+    #   jupyterhub
     #   nbclassic
     #   notebook
 prompt-toolkit==3.0.37
@@ -329,7 +389,9 @@ pygments==2.14.0
     #   ipython
     #   nbconvert
 pyopenssl==23.0.0
-    # via scrapy
+    # via
+    #   certipy
+    #   scrapy
 pyparsing==3.0.9
     # via matplotlib
 pyrsistent==0.19.3
@@ -338,12 +400,17 @@ python-dateutil==2.8.2
     # via
     #   arrow
     #   jupyter-client
+    #   jupyterhub
     #   matplotlib
     #   pandas
 python-json-logger==2.0.7
-    # via jupyter-events
+    # via
+    #   jupyter-events
+    #   jupyter-telemetry
 pytz==2022.7.1
-    # via pandas
+    # via
+    #   babel
+    #   pandas
 pyyaml==6.0
     # via jupyter-events
 pyzmq==25.0.0
@@ -358,6 +425,8 @@ queuelib==1.6.2
 requests==2.28.2
     # via
     #   -r requirements.in
+    #   jupyterhub
+    #   jupyterlab-server
     #   requests-file
     #   tldextract
 requests-file==1.5.1
@@ -370,6 +439,10 @@ rfc3986-validator==0.1.1
     # via
     #   jsonschema
     #   jupyter-events
+ruamel-yaml==0.17.21
+    # via jupyter-telemetry
+ruamel-yaml-clib==0.2.7
+    # via ruamel-yaml
 scipy==1.10.1
     # via -r requirements.in
 scrapy==2.8.0
@@ -397,6 +470,10 @@ sniffio==1.3.0
     # via anyio
 soupsieve==2.4
     # via beautifulsoup4
+sqlalchemy==2.0.4
+    # via
+    #   alembic
+    #   jupyterhub
 stack-data==0.6.2
     # via ipython
 starlette==0.25.0
@@ -413,6 +490,8 @@ tinycss2==1.2.1
     # via nbconvert
 tldextract==3.4.0
     # via scrapy
+tomli==2.0.1
+    # via jupyterlab
 toolz==0.12.0
     # via altair
 tornado==6.2
@@ -420,6 +499,8 @@ tornado==6.2
     #   ipykernel
     #   jupyter-client
     #   jupyter-server
+    #   jupyterhub
+    #   jupyterlab
     #   nbclassic
     #   notebook
     #   terminado
@@ -433,6 +514,8 @@ traitlets==5.9.0
     #   jupyter-core
     #   jupyter-events
     #   jupyter-server
+    #   jupyter-telemetry
+    #   jupyterhub
     #   matplotlib-inline
     #   nbclassic
     #   nbclient
@@ -444,6 +527,7 @@ twisted==22.10.0
 typing-extensions==4.5.0
     # via
     #   pydantic
+    #   sqlalchemy
     #   twisted
 uri-template==1.2.0
     # via jsonschema
@@ -468,8 +552,14 @@ werkzeug==2.2.3
     # via flask
 widgetsnbextension==3.5.2
     # via ipywidgets
+y-py==0.5.9
+    # via
+    #   jupyter-ydoc
+    #   ypy-websocket
 yarl==1.8.2
     # via aiohttp
+ypy-websocket==0.8.2
+    # via jupyter-server-ydoc
 zope-interface==5.5.2
     # via
     #   scrapy
