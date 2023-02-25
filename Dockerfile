@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 # install the notebook package
-RUN pip install --no-cache --upgrade pip && \
-    pip install --no-cache notebook jupyterlab
+# RUN pip install --no-cache --upgrade pip && \
+#     pip install --no-cache notebook jupyterlab
 # create user with a home directory
 ARG NB_USER=jovyan
 ARG NB_UID=1000
