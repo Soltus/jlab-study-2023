@@ -1,2 +1,0 @@
-pip install ipywidgets
-pip install jupyterlab_execute_time
