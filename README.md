@@ -1,12 +1,10 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main)
 
-项目托管在 [Github](https://github.com/Soltus/jlab-study-2023)
-
-交互体验在 [Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main)（额外提供界面简洁的 [React Interface in Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main?urlpath=nteract) ，代价是许多功能将不可用）
-
 # 简介
 
-此仓库是一八六战略二期工程项目，绛亽新学习融创示范项目
+此仓库托管在 [Github](https://github.com/Soltus/jlab-study-2023) ，是一八六战略二期工程项目，绛亽新学习融创示范项目
+
+项目可交互体验依托 [Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main) 实现（额外提供界面简洁的 [React Interface in Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main?urlpath=nteract) ，代价是许多功能将不可用）
 
 其开源贡献包括两大方面：
 
