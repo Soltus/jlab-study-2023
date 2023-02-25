@@ -1,10 +1,10 @@
-FROM python:3.10
+# FROM python:3.10
+FROM jupyter/minimal-notebook:latest
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache pip-tools && \
     pip-sync /tmp/requirements.txt --pip-args "--quiet --retries 10 --timeout 30"
-EXPOSE 8888
-CMD ["jupyter lab", "--port='8888'", "--ip='*'", "--no-browser", "--allow-root"]
+
 # FROM jupyter/datascience-notebook:cde8b4389ade
 # FROM jupyter/base-notebook:latest
 # COPY environment.yml /tmp/environment.yml
