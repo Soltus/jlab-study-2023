@@ -2,7 +2,7 @@ FROM python:3.10
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache pip-tools && \
-    pip-sync requirements.txt --pip-args "--quiet --retries 10 --timeout 30"
+    pip-sync /tmp/requirements.txt --pip-args "--quiet --retries 10 --timeout 30"
 # FROM jupyter/datascience-notebook:cde8b4389ade
 # FROM jupyter/base-notebook:latest
 # COPY environment.yml /tmp/environment.yml
