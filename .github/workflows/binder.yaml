@@ -19,4 +19,3 @@ jobs:
         BINDER_CACHE: true # 写入 binder/Dockerfile
         PUBLIC_REGISTRY_CHECK: true # 检查是否是公开的镜像服务
         MYBINDERORG_TAG: ${{ github.event.ref }}
-        REPO_DIR: /home/jovyan
