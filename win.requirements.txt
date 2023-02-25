@@ -481,7 +481,7 @@ pillow==9.4.0
     #   wordcloud
 platformdirs==3.0.0
     # via jupyter-core
-plotly==5.13.0
+plotly==5.13.1
     # via pandasgui
 prometheus-client==0.16.0
     # via

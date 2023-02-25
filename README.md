@@ -4,6 +4,15 @@
 
 交互体验在 [Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main)（额外提供界面简洁的 [React Interface in Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main?urlpath=nteract) ，代价是许多功能将不可用）
 
+# 简介
+
+此仓库是一八六战略二期工程项目，绛亽新学习融创示范项目
+
+其开源贡献包括两大方面：
+
+1. 提供一个开箱即用的 Jupyter Lab 环境（Windows AMD64)，包括基础环境与扩展环境
+2. 丰富 Python 编程学习资料
+
 # 复苏
 
 > 如果需要镜像加速下载，请参考 [Python镜像 (yuque.com)](https://www.yuque.com/cnbc/py3/image)

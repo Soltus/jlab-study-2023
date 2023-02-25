@@ -1,16 +1,20 @@
-### 完整的 windows 依赖包清单 ###
+#>>>   完整的 Windows AMD64 依赖包清单   <<<#
+
+##########################################################################
+################################ 基础环境 ################################
+##########################################################################
 jupyterlab
-# lab 核心插件
+  # lab 核心插件
 jupyterlab-language-pack-zh-CN
 jupyterlab-git
 ipywidgets==7.6.6
-### REF: https://github.com/g2nb/nbtools/issues/5
+      #>>> REF: https://github.com/g2nb/nbtools/issues/5
 nbtools
 ipympl
 nbdime
 jupyter-wysiwyg
 jupyter-archive
-# python-lsp-server （@krassowski/jupyterlab-lsp） 貌似和 jupyterlab-lsp 一样。但是禁用和卸载不方便
+      #>>> python-lsp-server （@krassowski/jupyterlab-lsp） 貌似和 jupyterlab-lsp 一样。但是禁用和卸载不方便
 jupyterlab-lsp
 jedi-language-server
 digautoprofiler
@@ -18,19 +22,23 @@ jupyterlab-recents
 jupyterlab-cell-flash
 jupyterlab_execute_time
 jupyterspot
-# lab 插件
+  # lab 插件
 jupyter_scheduler
 jupyterlab_pygments
 jupyterlab_templates
 ipyuploads
 ipycytoscape
-# 实用工具包
+  # 实用工具包
 rich
 dearpygui
 scalene
 pyinspect
-# 业务包
-## 数据分析与可视化常用包
+
+##########################################################################
+################################ 扩展环境 ################################
+##########################################################################
+  # 业务包
+  ## 数据分析与可视化常用包
 numpy
 sympy
 scipy
@@ -40,7 +48,7 @@ pandas
 pandasgui
 Pillow
 hiplot
-## 网络工具常用包
+  ## 网络工具常用包
 requests
 beautifulsoup4
 fastapi
