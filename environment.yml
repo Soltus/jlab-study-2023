@@ -4,8 +4,24 @@ channels:
 dependencies:
 - python >=3.10,<3.12
 - pip >=23,<24
-- jupyterlab >=3.6,<3.7
-- jupyterhub-singleuser >=3.1.1,<4
-- notebook
+- jupyterlab
+- jupyterhub
 - jupyterlab-language-pack-zh-CN
-- ipywidgets ==7.6.6
+- notebook
+- ipywidgets==7.6.6
+- digautoprofiler
+- jupyterlab-cell-flash
+- numpy
+- sympy
+- scipy
+- matplotlib
+- seaborn
+- pandas
+# pandasgui
+- Pillow
+- hiplot
+- requests
+- beautifulsoup4
+- fastapi
+- aiohttp
+- Scrapy
