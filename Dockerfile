@@ -1,5 +1,6 @@
 # FROM python:3.10-slim
-FROM jupyter/datascience-notebook:cde8b4389ade
+# FROM jupyter/datascience-notebook:cde8b4389ade
+FROM jupyter/base-notebook:latest
 COPY environment.yml /tmp/environment.yml
 RUN mamba env update -n notebook --file /tmp/environment.yml \
   && mamba clean -yaf
