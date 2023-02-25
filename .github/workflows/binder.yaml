@@ -8,19 +8,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-    - name: checkout files in repo
-      uses: actions/checkout@master
-
-    - name: cache binder build on mybinder.org
-      uses: jupyterhub/repo2docker-action@master
+    - name: Checkout Code
+      uses: actions/checkout@v2
       with:
-        NO_PUSH: true
-        MYBINDERORG_TAG: ${{ github.event.ref }}
+        ref: ${{ github.event.pull_request.head.sha }}
 
     - name: update jupyter dependencies with repo2docker
-      uses: machine-learning-apps/repo2docker-action@master
+      uses: jupyterhub/repo2docker-action@master
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         BINDER_CACHE: true
+        PUBLIC_REGISTRY_CHECK: true
+
+    # - name: checkout files in repo
+    #   uses: actions/checkout@master
+
+    # - name: update jupyter dependencies with repo2docker
+    #   uses: jupyterhub/repo2docker-action@master
+    #   with:
+    #     DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+    #     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+    #     BINDER_CACHE: true
