@@ -2,7 +2,6 @@
 # FROM jupyter/datascience-notebook:cde8b4389ade
 FROM jupyter/base-notebook:latest
 COPY environment.yml /tmp/environment.yml
-COPY src /home/jovyan/src
 RUN mamba env update -n notebook --file /tmp/environment.yml \
   && mamba clean -yaf
 # install the notebook package
