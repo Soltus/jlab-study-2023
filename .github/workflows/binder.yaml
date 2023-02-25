@@ -23,8 +23,6 @@ jobs:
 
     - name: checkout files in repo
       uses: actions/checkout@master
-      with:
-        ref: main
 
     - name: update jupyter dependencies with repo2docker
       uses: jupyterhub/repo2docker-action@master
