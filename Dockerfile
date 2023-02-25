@@ -1,5 +1,5 @@
 FROM python:3.10
-COPY binder/requirements.txt /tmp/requirements.txt
+COPY ./binder/requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache pip-tools && \
     pip-sync requirements.txt --pip-args "--quiet --retries 10 --timeout 30"
