@@ -8,19 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    # - name: Checkout Code
-    #   uses: actions/checkout@v2
-    #   with:
-    #     ref: ${{ github.event.pull_request.head.sha }}
-
-    # - name: update jupyter dependencies with repo2docker
-    #   uses: jupyterhub/repo2docker-action@master
-    #   with:
-    #     DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-    #     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-    #     BINDER_CACHE: true
-    #     PUBLIC_REGISTRY_CHECK: true
-
     - name: checkout files in repo
       uses: actions/checkout@master
 
@@ -29,4 +16,6 @@ jobs:
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        BINDER_CACHE: true
+        BINDER_CACHE: true # 写入 binder/Dockerfile
+        PUBLIC_REGISTRY_CHECK: true # 检查是否是公开的镜像服务
+        MYBINDERORG_TAG: main

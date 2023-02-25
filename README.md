@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/HEAD?urlpath=lab) ![GitHub repo size](https://img.shields.io/github/repo-size/Soltus/jlab-study-2023?logo=github&style=flat-square) [![Docker](https://img.shields.io/badge/Docker-585899?logo=docker&style=flat-square)](https://hub.docker.com/repository/docker/soltus/jlab-study-2023)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/HEAD?urlpath=lab) ![GitHub repo size](https://img.shields.io/github/repo-size/Soltus/jlab-study-2023?logo=github&style=flat-square) [![Build Notebook Container](https://github.com/Soltus/jlab-study-2023/actions/workflows/binder.yaml/badge.svg)](https://github.com/Soltus/jlab-study-2023/actions/workflows/binder.yaml) [![Docker](https://img.shields.io/badge/Docker-585899?logo=docker&style=flat-square)](https://hub.docker.com/repository/docker/soltus/jlab-study-2023)
 # 简介
 
 此仓库托管在 [Github](https://github.com/Soltus/jlab-study-2023) ，是一八六战略二期工程项目，绛亽新学习融创示范项目
