@@ -7,6 +7,9 @@ FROM jupyter/minimal-notebook:latest
 
 # FROM jupyter/datascience-notebook:cde8b4389ade
 # FROM jupyter/base-notebook:latest
+COPY src /src
+COPY demo.ipynb /demo.ipynb
+COPY index.ipynb /index.ipynb
 COPY environment.yml /tmp/environment.yml
 RUN mamba env update -n notebook --file /tmp/environment.yml \
   && mamba clean -yaf
