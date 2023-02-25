@@ -9,7 +9,7 @@ dependencies:
 - jupyterlab-language-pack-zh-CN
 - notebook
 - ipywidgets==7.6.6
-- digautoprofiler
+# - digautoprofiler # nothing provides requested digautoprofiler
 - jupyterlab-cell-flash
 - numpy
 - sympy
