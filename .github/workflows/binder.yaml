@@ -12,9 +12,16 @@ jobs:
     - name: checkout files in repo
       uses: actions/checkout@master
 
+    - name: cache binder build on mybinder.org
+      uses: jupyterhub/repo2docker-action@master
+      with:
+        NO_PUSH: true
+        MYBINDERORG_TAG: ${{ github.event.ref }}
+
     - name: update jupyter dependencies with repo2docker
       uses: machine-learning-apps/repo2docker-action@master
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        BINDER_CACHE: true # It appears that “MYBINDERORG_CACHE” has been renamed “BINDER_CACHE”.
+        BINDER_CACHE: true
+        NOTEBOOK_USER: lsy

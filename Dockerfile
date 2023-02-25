@@ -1,7 +1,9 @@
 FROM python:3.10-slim
 # install the notebook package
 RUN pip install --no-cache --upgrade pip && \
-    pip install --no-cache notebook jupyterlab jupyterlab-language-pack-zh-CN
+    pip install --no-cache notebook jupyterlab pip-tools && \
+    cd /home/lsy && ls && \
+    pip-sync requirements.txt --pip-args "--quiet --retries 10 --timeout 30"
 ENV HOME=/tmp
 # create user with a home directory
 # ARG NB_USER=jovyan
