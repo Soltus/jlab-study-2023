@@ -14,3 +14,4 @@ jobs:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         MYBINDERORG_CACHE: true
+        BINDER_CACHE: true # It appears that “MYBINDERORG_CACHE” has been renamed “BINDER_CACHE”.
