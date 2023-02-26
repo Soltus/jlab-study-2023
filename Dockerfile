@@ -1,7 +1,7 @@
-FROM jupyter/scipy-notebook:python-3.9.13
-# COPY environment.yml /tmp/environment.yml
-# RUN mamba env update -n notebook --file /tmp/environment.yml \
-#   && mamba clean -yaf
+FROM jupyter/scipy-notebook:python-3.10.8
+COPY environment.yml /tmp/environment.yml
+RUN mamba env update -n notebook --file /tmp/environment.yml \
+  && mamba clean -yaf
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 # ENV USER ${NB_USER}

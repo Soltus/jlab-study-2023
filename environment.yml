@@ -2,12 +2,12 @@ channels:
 - conda-forge
 - nodefaults
 dependencies:
-- python >=3.10,<3.12
-- pip >=23,<24
-- jupyterlab
-- jupyterhub
+- python ==3.10
+- pip >=23
+# - jupyterlab
+# - jupyterhub
 - jupyterlab-language-pack-zh-CN
-- notebook
+# - notebook
 - ipywidgets==7.6.6
 # - digautoprofiler # nothing provides requested digautoprofiler
 - jupyterlab-cell-flash
