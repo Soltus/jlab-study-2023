@@ -2,15 +2,21 @@ channels:
 - conda-forge
 - nodefaults
 dependencies:
-- python ==3.10
-- pip >=23
 # - jupyterlab
 # - jupyterhub
-- jupyterlab-language-pack-zh-CN
+- jupyterlab-language-pack-zh-CN # lab ext
 # - notebook
-- ipywidgets==7.6.6
-# - digautoprofiler # nothing provides requested digautoprofiler
-- jupyterlab-cell-flash
+- ipywidgets==7.6.6 #>>> REF: https://github.com/g2nb/nbtools/issues/5
+- digautoprofiler # lab ext
+- jupyterlab-cell-flash # lab ext
+- jupyterlab_execute_time # lab ext
+- nbtools # lab ext
+- ipympl # lab ext
+- nbdime # lab ext
+- jupyter-wysiwyg # lab ext
+- jupyter-archive # lab ext
+- jupyterlab-lsp  # lab ext
+- jedi-language-server  # lab ext dep
 # - numpy
 # - sympy
 # - scipy
