@@ -1,9 +1,10 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/HEAD?urlpath=lab) ![GitHub repo size](https://img.shields.io/github/repo-size/Soltus/jlab-study-2023?logo=github&style=flat-square) [![Build Notebook Container](https://github.com/Soltus/jlab-study-2023/actions/workflows/binder.yaml/badge.svg)](https://github.com/Soltus/jlab-study-2023/actions/workflows/binder.yaml) [![Docker](https://img.shields.io/badge/Docker-585899?logo=docker&style=flat-square)](https://hub.docker.com/repository/docker/soltus/jlab-study-2023) ![Docker Pulls](https://img.shields.io/docker/pulls/soltus/jlab-study-2023?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/soltus/jlab-study-2023?style=flat-square)
+
 # 简介
 
 此仓库托管在 [Github](https://github.com/Soltus/jlab-study-2023) ，是一八六战略二期工程项目，绛亽新学习融创示范项目
 
-项目可交互体验依托 [Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/HEAD?urlpath=lab) 实现（额外提供界面简洁的 [React Interface in Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/main?urlpath=nteract) ，代价是许多功能将不可用）
+项目可交互体验依托 [Binder](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/HEAD?urlpath=lab/tree/binder.ipynb) 实现
 
 其开源贡献包括两大方面：
 
