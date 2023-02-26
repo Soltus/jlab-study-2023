@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:python-3.10.8
+FROM jupyter/scipy-notebook:python-3.9.13
 # COPY environment.yml /tmp/environment.yml
 # RUN mamba env update -n notebook --file /tmp/environment.yml \
 #   && mamba clean -yaf
