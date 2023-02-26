@@ -11,17 +11,17 @@ dependencies:
 - ipywidgets==7.6.6
 # - digautoprofiler # nothing provides requested digautoprofiler
 - jupyterlab-cell-flash
-- numpy
-- sympy
-- scipy
-- matplotlib
-- seaborn
-- pandas
-# pandasgui
-- Pillow
-- hiplot
-- requests
-- beautifulsoup4
-- fastapi
-- aiohttp
-- Scrapy
+# - numpy
+# - sympy
+# - scipy
+# - matplotlib
+# - seaborn
+# - pandas
+# # pandasgui
+# - Pillow
+# - hiplot
+# - requests
+# - beautifulsoup4
+# - fastapi
+# - aiohttp
+# - Scrapy
