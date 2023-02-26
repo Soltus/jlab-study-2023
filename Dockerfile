@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:python-3.10.8
+FROM jupyter/scipy-notebook:python-3.9.13
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 # ENV USER ${NB_USER}
