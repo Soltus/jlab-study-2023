@@ -1,5 +1,8 @@
 # jupyter/scipy-notebook 自带目录
-/work
+work
 # 不需要的
 /*.txt
+/*.in
+/*.md
+templates
 Dockerfile
