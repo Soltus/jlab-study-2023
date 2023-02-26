@@ -17,6 +17,8 @@ RUN mamba env update -n base --file /tmp/environment.yml \
 RUN pip install digautoprofiler
 RUN pip install jupyter-wysiwyg
 RUN pip install nbtools
+# nbgitpuller 用于内容仓库与环境仓库分离
+RUN pip install nbgitpuller
 # auto run initial work
 RUN nbdime config-git --enable --global
 RUN chown -R ${NB_UID} ${HOME}
