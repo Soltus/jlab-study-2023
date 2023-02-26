@@ -7,7 +7,7 @@ ARG NB_UID=1000
 USER root
 COPY . /home/${NB_USER}
 COPY environment.yml /tmp/environment.yml
-RUN mamba env update -n notebook --file /tmp/environment.yml \
+RUN mamba env update -n base --file /tmp/environment.yml \
   && mamba clean -yaf
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}

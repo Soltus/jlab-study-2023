@@ -8,9 +8,9 @@ dependencies:
 # - jupyterhub
 - jupyterlab-language-pack-zh-CN
 # - notebook
-# - ipywidgets==7.6.6
+- ipywidgets==7.6.6
 # - digautoprofiler # nothing provides requested digautoprofiler
-# - jupyterlab-cell-flash
+- jupyterlab-cell-flash
 # - numpy
 # - sympy
 # - scipy
