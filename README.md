@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/HEAD?urlpath=lab) ![GitHub repo size](https://img.shields.io/github/repo-size/Soltus/jlab-study-2023?logo=github&style=flat-square) [![Build Notebook Container](https://github.com/Soltus/jlab-study-2023/actions/workflows/binder.yaml/badge.svg)](https://github.com/Soltus/jlab-study-2023/actions/workflows/binder.yaml) [![Docker](https://img.shields.io/badge/Docker-585899?logo=docker&style=flat-square)](https://hub.docker.com/repository/docker/soltus/jlab-study-2023) ![Docker Pulls](https://img.shields.io/docker/pulls/soltus/jlab-study-2023?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/soltus/jlab-study-2023?style=flat-square)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Soltus/jlab-study-2023/HEAD?urlpath=lab) ![GitHub repo size](https://img.shields.io/github/repo-size/Soltus/jlab-study-2023?logo=github&style=flat-square)
 
 # 简介
 
